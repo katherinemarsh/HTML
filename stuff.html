@@ -20,8 +20,67 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <img alt="Company Logo" class="companyLogo" src="../assets/images/logo.svg">
-                        <div id="api">
+<div id="api" data-name="Unified" role="main">
+      <div class="heading">
+        <h1 role="heading">Sign in</h1>
+      </div>
+      <form id="localAccountForm" action="JavaScript:void(0);" class="localAccount" aria-label="Sign in with your email address">
+        <div class="intro">
+          <h2 aria-level="1">
+            Sign in with your email address
+          </h2>
+        </div>
+        <div class="error pageLevel" aria-hidden="true" role="alert" style="display: none;">
+          <p></p>
+        </div>
+        <div class="entry">
+          <div class="entry-item">
+            <div class="error itemLevel" aria-hidden="true" role="alert" style="display: none;">
+              <p></p>
+            </div>
+            <input type="email" id="email" name="Email Address" title="Please enter a valid Email Address" pattern="^[a-zA-Z0-9!#$%&amp;'+^_`{}~-]+(?:\.[a-zA-Z0-9!#$%&amp;'+^_`{}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$" autofocus="" placeholder="Email Address" aria-label="Email Address">
+          </div>
+            <div class="entry-item">
+              <div class="password-label">
+                              </div>
+              <div class="error itemLevel" aria-hidden="true" style="display: none;">
+                <p role="alert"></p>
+              </div>
+              <input type="password" id="password" name="Password" placeholder="Password" aria-label="Password" autocomplete="current-password" aria-required="true">
+                <div class="forgot-password center-height">
+                  <a id="forgotPassword" href="/katapp.onmicrosoft.com/B2C_1_SISU/api/CombinedSigninAndSignup/forgotPassword?csrf_token=YThGbVZ2OE5nYkRKVUJpc2lrbFd5OThQbWNaaUdodFRBWGMrc3NDcjE0eDhCTzMrNjlVZHB0QitiZVBMQWxZcm80cld6dUV2VXF2MHdPL1h3bkZucVE9PTsyMDIyLTA5LTI5VDAxOjE1OjM0LjY4MDk1MjJaOzF1TUNpQUpIaXhVS3I0T3Q1dnpDbmc9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiI5MDkxMDVmYy1jMmY3LTQ5YTMtOWQwOS02ZjcwYjJkODRjM2UifQ&amp;p=B2C_1_SISU" data-ol-has-click-handler="">Forgot your password?</a>
+                </div>
+                          </div>
+          <div class="working"></div>
+
+
+          <div class="buttons">
+            <button id="next" type="submit" form="localAccountForm" data-ol-has-click-handler="">Sign in</button>
+          </div>
+        </div>
+              <div class="divider">
+                <h2>OR</h2>
+              </div>
+              <div class="create">
+                <p>
+                  Don't have an account?<a id="createAccount" href="/katapp.onmicrosoft.com/B2C_1_SISU/api/CombinedSigninAndSignup/unified?local=signup&amp;csrf_token=YThGbVZ2OE5nYkRKVUJpc2lrbFd5OThQbWNaaUdodFRBWGMrc3NDcjE0eDhCTzMrNjlVZHB0QitiZVBMQWxZcm80cld6dUV2VXF2MHdPL1h3bkZucVE9PTsyMDIyLTA5LTI5VDAxOjE1OjM0LjY4MDk1MjJaOzF1TUNpQUpIaXhVS3I0T3Q1dnpDbmc9PTt7Ik9yY2hlc3RyYXRpb25TdGVwIjoxfQ==&amp;tx=StateProperties=eyJUSUQiOiI5MDkxMDVmYy1jMmY3LTQ5YTMtOWQwOS02ZjcwYjJkODRjM2UifQ&amp;p=B2C_1_SISU" data-ol-has-click-handler="">Sign up now</a>
+                </p>
+              </div>
+      </form>
+        <div class="divider">
+          <h2>OR</h2>
+        </div>
+        <div class="claims-provider-list-buttons social" aria-label="Sign in with your social account" role="form">
+          <div class="intro">
+            <h2 aria-level="1">Sign in with your social account</h2>
+          </div>
+          <div class="options">
+                <div>
+                    <button class="accountButton firstButton claims-provider-selection" id="GoogleExchange" role="link" data-ol-has-click-handler="">CONTINUE WITH GOOGLE</button>
+                </div>
                         </div>
+        </div>
+  </div>
                     </div>
                 </div>
             </div>
